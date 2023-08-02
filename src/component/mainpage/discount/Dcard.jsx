@@ -38,12 +38,14 @@ const Dcard = () => {
 
   const data = (val) => {
     return (
-      <div className="product" key={val.id}>
-        <div className="img">
-          <img src={val.cover} width="100%" alt={val.cover} />
+      <div className="box">
+        <div className="product" key={val.id}>
+          <div className="img">
+            <img src={val.cover} width="100%" alt={val.cover} />
+          </div>
+          <p className="product-title">{val.name}</p>
+          <span>{val.price}</span>
         </div>
-        <p className="product-title">{val.name}</p>
-        <span>{val.price}</span>
       </div>
     );
   };
